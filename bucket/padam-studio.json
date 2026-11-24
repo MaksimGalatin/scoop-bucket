@@ -1,0 +1,30 @@
+{
+    "version": "0.8.0",
+    "description": "PADAM NOCTURNE Studio — local sovereign AI agent memory and 4-ring Agentic Shield security desktop app + MCP server.",
+    "homepage": "https://aifa.works/shield",
+    "license": {
+        "identifier": "LicenseRef-PADAM-1.0",
+        "url": "https://github.com/MaksimGalatin/padam-nocturne/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/MaksimGalatin/padam-nocturne/releases/download/v0.8.0/PADAM-Studio-Setup-0.8.0.exe",
+            "hash": "70b71b9d9edecc2bc1d42ba752bdcd96acac2af62bb528c5dbfa9c0dba92971b"
+        }
+    },
+    "installer": {
+        "args": [
+            "/S"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/MaksimGalatin/padam-nocturne"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/MaksimGalatin/padam-nocturne/releases/download/v$version/PADAM-Studio-Setup-$version.exe"
+            }
+        }
+    }
+}
